@@ -4,7 +4,12 @@ body{
     height: 100vh;
     margin: 0;
 }
+.logo{
+    font-size: 2rem;
+    padding-right: 1rem;
+}
 main{
+    background-color: rgba(37, 92, 74, 0.438);
     display: flex;
     flex-direction: row;
     flex: auto;
@@ -14,7 +19,28 @@ article {
     overflow-y: auto;
 
 }
+
 aside{
+    background-color: gainsboro;
     flex: 1;
     overflow-y: auto;
+}
+
+header {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 5px;
+    outline: 15px solid rgba(78, 143, 103, 0.171);
+}
+header ul li a:visited{
+    color: rgb(66, 88, 13); green
+}
+header ul li a:hover{
+    color: blue;
+}
+footer{
+    background-color: black;
+    color: azure;
+    text-align: center;
 }
