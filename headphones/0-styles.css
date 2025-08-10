@@ -30,111 +30,165 @@ time, mark, audio, video {
     font-style: normal;
 
 }
+
+
 body {
+    font-family:'source sans pro', 'spin_cycle_otregular';
+    min-height: 100vh;
     background-image: url(headphones_hero_1.jpg);
     background-repeat: no-repeat;
+    background-position:center;
     background-size: cover;
-    font-family: 'source sans pro', 'spin_cycle_otregular';
-    height: 100vh;
-    width: 100%;
-    padding-top: 200px;
+    margin-top: 0;
 }
-header {
-    position: fixed;
-    width: 100%;
-    top: 29px;
-}
-
 .topbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    max-width: 1300px;
+    justify-content:space-between;
+    justify-items: center;
     margin: 0 auto;
     padding: 0 30px;
-
-}
-.list{
-    display: flex;
-    column-gap: 40px;
-    font-size: 20px;
-    list-style-type: none;
-}
-
-.list :hover {
-    color: red;    
-}
-.list :visited{
-    color: firebrick;
 }
 
 .logo {
-    height: 50px;
     display: flex;
+    padding: 20px;
     align-items: center;
-    margin-left: 0px;
-    width: 150px ;
-    height: auto;
 }
-.nav_list {
-    color: white;    
+
+.list{
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+    list-style: none;
+}
+.hideOnMobile:hover{
+    color: red;
+}
+.hideOnMobile {
+    color: white;
     text-decoration: none;
+
 }
+.menubut {
+    display: none;
+}
+button {
+    background: none;
+    border: none;
+    float: left;
+    margin: 2em;
+    cursor: pointer;
 
-
-/* MAIN first section */
-.head1 {
-    justify-items: center;
-    margin-top: auto;
-    margin-left: 50px;
-    justify-content: center;
-    padding: 50px;
+    svg {
+        width: 70px;
+        height: 70px;
+    }
+}
+.na{
     color: white;
 }
-.head1 h1 {    
-    align-items: center;
-    justify-items: center;
-    padding-left: 0px;
-    padding-top: 250px;
-    font-weight: bolder;
-    font-size: 40px;
-}    
-.head1 p {
-    padding-left: 20px;
 
+.navi {
+    width: 100%;
+    right: auto;
+    bottom: auto;
+    background: rgba(36, 36, 52, 0.767);
+    border: none;
+    height: 100vh;
+    translate: 100% 0;
+    color: white;
+    transition: translate 0.5s, display 0.5s ease-out allow-discrete;
+
+
+    &:popover-open{
+        translate: 0 0;
+        @starting-style{
+            translate: 100% 0;
+        }
+    }
+
+    button{
+        margin: 0;
+
+        svg {
+            width: 40px;
+            float: right;
+            margin: 2em 3em;
+        }
+    }
+     ul{
+        list-style-type: none;
+        margin-top: 7em;
+        justify-items: center;
+
+        li{
+            padding: 2em 0;
+            align-items: center;
+
+            a {
+                font-size: 1.5em;
+                text-decoration: none;
+                color: white;
+                align-items: center;
+            }
+        }
+     }
+
+    
 }
 
-/* button */
+
+/* ##################MOBILE################ */
+@media screen and (max-width: 600px) {
+    .hideOnMobile{
+        display: none;
+    }
+    .menubut{
+        display: block;
+    }
+}
+
+/* ############-SECTION CODING PART-############## */
+.section1 {
+    justify-items: center;
+}
+
+.head1{
+    color: white;
+}
+    
+    h1{
+        font-size: 40px;
+        padding-top: 350px;
+        font-weight: bolder;
+        text-align: center;
+    }
+    p{
+        justify-items: center;
+        padding: 5px;
+        text-align: center;
+    }
 .but1 {
-    justify-items: center;
-    justify-content: center;
-}
-.butt1 {
-    justify-items: center;
-    color: white;
-    border: 1px solid red;
-    border-radius: 35px;
-    background-color: red;
-    font-size: 15px;
-    padding: 15px 40px 15px 40px;
-    margin: 60px 800px 50px 875px;
+    padding-top: 5em;
 }
 .butt1:hover{
-    color: rgba(179, 235, 245, 0.74);
+    color: rgba(212, 235, 193, 0.719);
 }
-.article1 {
+
+.butt1{
+    background-color: red;
+    border: 20px;
+    border-color: red;
+    border-radius: 25px;
+    padding: 20px 70px;
     color: white;
-    align-items: center;
-    justify-items: center;
-    margin-top: 150px;
-
-}
-.article1 article {
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    text-align:center;
-    text-justify: inter-word;
-    margin: 0;
+    cursor: pointer:
 }
 
+.article1{
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 15em;
+}
