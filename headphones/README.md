@@ -1,1 +1,1 @@
-Developing a clone headphones site 
+developing first page for headphones
