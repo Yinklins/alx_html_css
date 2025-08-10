@@ -98,7 +98,7 @@ button {
     height: 100vh;
     translate: 100% 0;
     color: white;
-    transition: translate 0.5s, display 0.5s ease-out allow-discrete;
+    transition: translate 0.5s, display 0.5s ease-in-out allow-discrete;
 
 
     &:popover-open{
@@ -183,7 +183,7 @@ button {
     border-radius: 25px;
     padding: 20px 70px;
     color: white;
-    cursor: pointer:
+    cursor: pointer;
 }
 
 .article1{
