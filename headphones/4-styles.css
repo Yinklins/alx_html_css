@@ -61,7 +61,7 @@ body {
     display: flex;
     padding: 20px;
     align-items: center;
-    padding-left: 150px;
+    padding-left: 30px;
     width: 150px;
     height: auto;
 }
@@ -150,7 +150,7 @@ button {
 
 
 /* ##################MOBILE################ */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .hideOnMobile{
         display: none;
     }
@@ -363,14 +363,44 @@ button {
     }
   }
 
+  /* ###########---SECTION E---########## */
 
-
-  /* Section E */
-
-
-  .sectionE{
-    padding-top: 10px;
-    background-color: grey;
+  footer{
+    display: block;
   }
 
-  
+  .footer{
+    justify-items: center;
+    display: block;
+    background-color: rgb(7, 22, 41, 100%);
+    p{
+        color: rgba(255, 255, 255, 0.336);
+    }
+  }
+  .soc {
+    display: flex;
+    padding: 10px;
+  }
+  .arrange{
+    display:flex;
+  }
+
+
+  @media screen and (max-width: 1200px){
+    .arrange{
+        display:flex;
+        gap:500px;
+    }
+  }
+  @media screen and (max-width: 900px){
+    .arrange{
+        display:flex;
+        gap:250px;
+    }
+  }
+  @media screen and (max-width: 600px){
+    label{
+        display:block;
+        gap: 0;
+    }
+  }
