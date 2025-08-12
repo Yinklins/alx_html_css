@@ -1,0 +1,426 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+@font-face {
+    font-family: 'spin_cycle_otregular';
+    src: url('fonts/spincycle_ot-webfont.eot');
+    src: url('fonts/spincycle_ot-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/spincycle_ot-webfont.woff2') format('woff2'),
+         url('fonts/spincycle_ot-webfont.woff') format('woff'),
+         url('fonts/spincycle_ot-webfont.ttf') format('truetype'),
+         url('fonts/spincycle_ot-webfont.svg#spin_cycle_otregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+    font-family:'source sans pro', 'spin_cycle_otregular';
+    min-height: 100vh;
+   
+}
+.sectionA{
+     background-image: url(headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    margin-top: 0;
+    background-attachment: scroll;
+    width: auto;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    justify-items: center;
+    margin: 0 auto;
+    padding: 0 150px;
+    height: 150px;
+}
+
+.logo {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    padding-left: 30px;
+    width: 150px;
+    height: auto;
+}
+
+.list{
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+    list-style: none;
+}
+.hideOnMobile:hover{
+    color: red;
+}
+.hideOnMobile {
+    color: white;
+    text-decoration: none;
+
+}
+.menubut {
+    display: none;
+}
+button {
+    background: none;
+    border: none;
+    float: left;
+    margin: 2em;
+    cursor: pointer;
+
+    svg {
+        width: 70px;
+        height: 70px;
+    }
+}
+.na{
+    color: white;
+}
+
+.navi {
+    width: 100%;
+    right: auto;
+    bottom: auto;
+    background: rgba(237, 237, 241, 0.534);
+    border: none;
+    height: 100vh;
+    translate: 100% 0;
+    color: white;
+    transition: translate 0.5s, display 0.5s ease-in-out allow-discrete;
+
+
+    &:popover-open{
+        translate: 0 0;
+        @starting-style{
+            translate: 100% 0;
+        }
+    }
+
+    button{
+        margin: 0;
+
+        svg {
+            width: 40px;
+            float: right;
+            margin: 2em 3em;
+        }
+    }
+     ul{
+        list-style-type: none;
+        margin-top: 7em;
+        justify-items: center;
+
+        li{
+            padding: 2em 0;
+            align-items: center;
+
+            a {
+                font-size: 1.5em;
+                text-decoration: none;
+                color: white;
+                align-items: center;
+            }
+        }
+     }
+
+    
+}
+
+
+/* ##################MOBILE################ */
+@media screen and (max-width: 700px) {
+    .hideOnMobile{
+        display: none;
+    }
+    .menubut{
+        display: block;
+    }
+    
+}
+
+/* ############-SECTION CODING PART-############## */
+.section1 {
+    justify-items: center;
+}
+
+.head1{
+    color: white;
+}
+    
+    h1{
+        font-size: 40px;
+        padding-top: 250px;
+        font-weight: bolder;
+        text-align: center;
+    }
+    p{
+        justify-items: center;
+        padding: 5px;
+        text-align: center;
+    }
+.but1 {
+    padding-top: 4em;
+}
+.butt1:hover{
+    color: rgba(212, 235, 193, 0.719);
+}
+
+.butt1{
+    background-color: red;
+    border: 20px;
+    border-color: red;
+    border-radius: 25px;
+    padding: 20px 70px;
+    color: white;
+    cursor: pointer;
+}
+
+.article1{
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 8em;
+}
+
+
+/* Section Two ------What we do.... */
+.SectionB {
+    justify-items: center;
+    display: block;
+    background-color: white;
+}
+
+.whatwed{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.art {
+    text-align: center;
+    padding: 50px;
+    padding-bottom: 5em;
+}
+
+.wedo {
+    display: flex;
+    padding: 1em;
+}
+.sep{
+    display: flex;
+    padding: 1em;
+}
+.all{
+    padding: 2em;
+    text-align: center;
+    
+    h3{
+        font-weight: bolder;
+        padding: 3px;
+    }
+
+
+}
+.trasitioning{
+    transition: transform 3s ease, opacity 5s ease;
+}
+.trasitioning:hover{
+    transform: scale(2) rotate(3deg);
+    opacity: 0.5;
+    animation: bounce 5s;   
+
+}
+@media screen and (max-width: 600px){
+    .wedo {
+    display: block;
+}
+}
+@media screen and (max-width: 400px){
+.sep{
+    display: block;
+}
+
+}
+
+/* #############----section c -----##############*/
+
+.sectionC {
+    background-image: url(headphones_hero_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+.result {
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 25px;
+    padding-top: 4em;
+}
+.pentagon{
+    background-image: url(pentagone.png);
+    background-repeat: no-repeat ;
+    background-position: center;
+    background-size: 180px;
+    padding: 80px;
+    h1{
+        padding-top: 20px;
+       padding-bottom: 5px;
+       padding: 20px;
+    }
+    p{
+        padding-bottom: 20px;
+    }
+}
+.sectC{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+}
+.seC{
+    display: flex;
+    padding: 20px;
+    transition: transform 3s ease, opacity 5s ease;
+}
+
+.seC :hover{
+    transform: scale(2) rotate(3deg);
+    opacity: 0.5;
+    animation: bounce 5s;   
+
+}
+
+@media screen and (max-width: 1000px){
+    .sectC {
+    display: block;
+}
+}
+@media screen and (max-width: 600px){
+.seC{
+    display: block;
+}
+}
+
+/* sectionD */
+.sectionD{
+    background-color: white;
+    justify-items: center;
+    h1{
+        padding-top: 50px;
+    }
+    button{
+        margin-left: 90px;
+        color: white;
+        border: 5px solid red;
+        border-radius: 25px;
+        background-color: red;
+        padding: 5px 25px;
+    }
+    button:hover{
+        color: rgba(212, 235, 193, 0.719);;
+    }
+}
+
+
+
+.underline-input {
+    border: none;                 /* Remove all borders */    
+    background: transparent;      /* No background */
+    padding: 8px 4px;              /* Some spacing */
+    outline: none;                 /* Remove focus outline */
+    font-size: 16px;
+    width: 250px;
+    justify-content: center;
+    height: 50px;
+  }
+  label {
+    display: block;  /* label on its own line */
+    margin-top: 15px;
+    border: none;
+    border-bottom: 2px solid #333;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+    width: 350px;
+    justify-content: center;
+    height: 50px ;
+  }
+  
+  form{
+    padding: 25px;
+  }
+
+  @media screen and (max-width: 400px){
+    label{
+        width: 200px;
+    }
+  }
+  @media screen and (max-width: 600px){
+    label{
+        width: 250px;
+    }
+  }
+
+  /* ###########---SECTION E---########## */
+
+  footer{
+    display: block;
+  }
+
+  .footer{
+    justify-items: center;
+    display: block;
+    background-color: rgb(7, 22, 41, 100%);
+    p{
+        color: rgba(255, 255, 255, 0.336);
+    }
+  }
+  .soc {
+    display: flex;
+    padding: 10px;
+  }
+  .arrange{
+    display:flex;
+  }
+
+
+  @media screen and (max-width: 1200px){
+    .arrange{
+        display:flex;
+        gap:500px;
+    }
+  }
+  @media screen and (max-width: 900px){
+    .arrange{
+        display:flex;
+        gap:250px;
+    }
+  }
+  @media screen and (max-width: 600px){
+    label{
+        display:block;
+        gap: 0;
+    }
+  }
